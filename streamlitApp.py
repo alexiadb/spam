@@ -11,15 +11,8 @@ import pandas as pd
 
 
 
-df = pd.read_csv("https://github.com/alexiadb/spam/blob/main/spam.csv", encoding='latin-1').head()
+df= pd.read_csv("spam.csv", encoding='latin-1')
 st.write(df)
 
 
-
-
-st.write("""#my first app
-         Hello *world*
-         """)
-     
-         
 
