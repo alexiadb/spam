@@ -6,15 +6,8 @@ Created on Thu Feb  3 09:27:13 2022
 @author: alexiadeboynes
 """
 # import des librairies
-import sqlite3
-#import mysql.connector
-import pymysql
-import psycopg2
-from sqlalchemy import create_engine
-import os
-import yaml
-import requests
-import pandas as pd
+
+
 import matplotlib.pyplot as plt
 from nltk import FreqDist
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -53,7 +46,7 @@ import streamlit as st
 
 
 
-df= pd.read_csv("spam.csv")
+df= pd.read_csv("spam.csv",encoding='latin-1')
 st.write(df)
 
 to_drop = ["Unnamed: 2","Unnamed: 3","Unnamed: 4"]

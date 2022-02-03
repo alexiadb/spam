@@ -49,11 +49,11 @@ from sklearn.metrics import precision_score, recall_score, plot_confusion_matrix
 from sklearn import metrics
 
 import streamlit as st
-import pandas as pd
 
 
 
-df= pd.read_csv("spam.csv", encoding='latin-1')
+
+df= pd.read_csv("spam.csv")
 st.write(df)
 
 to_drop = ["Unnamed: 2","Unnamed: 3","Unnamed: 4"]
