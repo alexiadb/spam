@@ -8,12 +8,12 @@ Created on Thu Feb  3 09:27:13 2022
 
 import streamlit as st
 import pandas as pd
-'''
+
 st.write("""#my first app
          Hello *world*
          """)
-     '''    
+     
          
 df= pd.read_csv("spam.csv", encoding='latin-1')
 st.line_chart(df)
-#data.info()       ''
+#data.info()       
