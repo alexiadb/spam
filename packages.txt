@@ -9,7 +9,7 @@ from nltk.stem.snowball import FrenchStemmer
 from wordcloud import WordCloud
 import pandas as pd
 import re
-#Importing all the libraries to be used
+
 import warnings
 import matplotlib.pyplot as plt
 import seaborn as sns

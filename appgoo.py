@@ -17,7 +17,8 @@ df = pd.DataFrame({"one": [1, 2, 3], "two": [4, 5, 6], "three": [7, 8, 9]})
 st.write(df)
 
 st.title("Connect to Google Sheets")
-gsheet_url = "hhttps://docs.google.com/spreadsheets/d/1FMFVt2piMLi18dYNqjnomnkZgK7mEYjeaF0l8O_JWew/edit?usp=sharing"
+gsheet_url = "https://docs.google.com/spreadsheets/d/1FMFVt2piMLi18dYNqjnomnkZgK7mEYjeaF0l8O_JWew/edit?usp=sharing" 
+encoding='latin-1'
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)

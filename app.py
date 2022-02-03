@@ -1,14 +1,39 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb  3 09:27:13 2022
 
-@author: alexiadeboynes
-"""
 # import des librairies
 
 
-
+import matplotlib.pyplot as plt
+from nltk import FreqDist
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+import spacy 
+from nltk.stem.snowball import FrenchStemmer
+from wordcloud import WordCloud
+import pandas as pd
+import re
+#Importing all the libraries to be used
+import warnings
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np 
+import pandas as pd
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline    
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.model_selection import cross_val_score
+from matplotlib.colors import ListedColormap
+from sklearn.metrics import precision_score, recall_score, plot_confusion_matrix, classification_report, accuracy_score, f1_score
+from sklearn import metrics
 
 import streamlit as st
 

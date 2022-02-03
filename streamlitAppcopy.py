@@ -6,14 +6,7 @@ Created on Thu Feb  3 09:27:13 2022
 @author: alexiadeboynes
 """
 # import des librairies
-import sqlite3
-#import mysql.connector
-import pymysql
-import psycopg2
-from sqlalchemy import create_engine
-import os
-import yaml
-import requests
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from nltk import FreqDist
@@ -35,25 +28,13 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline    
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.model_selection import cross_val_score
-from matplotlib.colors import ListedColormap
-from sklearn.metrics import precision_score, recall_score, plot_confusion_matrix, classification_report, accuracy_score, f1_score
-from sklearn import metrics
 
 import streamlit as st
 
 
 
 
-df= pd.read_csv("spam.csv")
+df= pd.read_csv("spam.csv", encoding='latin-1)
 st.write(df)
 
 to_drop = ["Unnamed: 2","Unnamed: 3","Unnamed: 4"]
